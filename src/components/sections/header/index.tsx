@@ -25,7 +25,7 @@ export default function Header() {
                         <img className="" src="img/menu.svg" />
                     </button>
                     <div
-                        className={`${showMenu ? "opacity-100" : "opacity-0"} z-40 bg-[#965BDD] duration-300 absolute inset-x-0 lg:static flex flex-col lg:flex-row justify-end items-center gap-6 w-full lg:w-auto shadow-md lg:shadow-none pb-8`}
+                        className={`${showMenu ? "opacity-100" : "lg:opacity-100 opacity-0"}  z-40 bg-[#965BDD] duration-300 absolute inset-x-0 lg:static flex flex-col lg:flex-row justify-end items-center gap-6 w-full lg:w-auto shadow-md lg:shadow-none pb-8`}
                         style={{
                             top: showMenu ? '102px' : '-200px'
                         }}

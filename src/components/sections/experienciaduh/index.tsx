@@ -7,7 +7,7 @@ export const Experiencia = () => {
             <h4 className='Aglet-italic-bold text-7xl text-[#edcc6b] -skew-y-6'>Duh!</h4>
             <p className='text-white Aglet mt-6'>Disfruta la experiencia Duh! como <br /> nunca antes</p>
             <div className='mt-16'>
-                <div className="flex  space-x-6 p-6">
+                <div className="flex overflow-scroll space-x-6 p-6">
 
                     <div className="flex flex-col items-center space-y-2">
                         <div className="from-instagramYellow via-instagramOrange to-instagramPurple relative rounded-full bg-gradient-to-tr p-1">

@@ -23,8 +23,8 @@ export const Contactanos = () => {
                     </div>
                     <div className="flex flex-col gap-4 justify-between items-center">
                         <div className="flex justify-around">
-                            <input type="text" placeholder='Nombre' className='border py-2 px-4 w-[48%] rounded-full border-black placeholder-black' />
-                            <input type="text" placeholder='Empresa' className='border py-2 px-4 w-[48%] rounded-full border-black placeholder-black' />
+                            <input type="text" placeholder='Nombre' className='border py-2 px-4 w-[45%] rounded-full border-black placeholder-black' />
+                            <input type="text" placeholder='Empresa' className='border py-2 px-4 w-[45%] rounded-full border-black placeholder-black' />
                         </div>
                         <input type="text" placeholder='Email' className='border py-2 px-4 w-[95%] rounded-full border-black placeholder-black' />
                         <input type="text" placeholder='Mensaje' className='border py-2 px-4 w-[95%] rounded-full border-black placeholder-black' />

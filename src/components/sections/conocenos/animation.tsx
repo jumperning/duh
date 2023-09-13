@@ -56,8 +56,9 @@ function ConocenosAnim() {
                 }}
             >
                 <div className="w-full h-full inset-0 m-auto relative">
-                    <div className="flex flex-col justify-center items-center">
-                        <span></span>
+                    <div className="flex flex-col justify-center items-center bg-red-400 px-4 py-2 text-sm text-bold text-white absolute rounded-lg">
+                        <span>Heart {likes}</span>
+                        
                     </div>
                     <img src="img/girl.png"
                         className="absolute"

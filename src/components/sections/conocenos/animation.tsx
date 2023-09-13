@@ -7,6 +7,8 @@ function ConocenosAnim() {
     const [scale, setScale] = useState(10);
     const [transitionTimingFunction, setTransitionTimingFunction] = useState("ease-out");
     const [top, setTop] = useState(100);
+    const [likes, setLikes] = useState(0);
+    const [comments, setComments] = useState(0);
 
     useEffect(() => {
         setTimeout(() => {
@@ -52,6 +54,9 @@ function ConocenosAnim() {
                 }}
             >
                 <div className="w-full h-full inset-0 m-auto relative">
+                    <div className="flex flex-col justify-center items-center">
+                        <span></span>
+                    </div>
                     <img src="img/girl.png"
                         className="absolute"
                         style={{

@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Aglet-bold';
+    src: url('fuentes/AgletSans-Bold.woff2') format('woff2'),
+        url('fuentes/AgletSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Aglet-italic-bold';
+    src: url('fuentes/AgletSans-BoldItalic.woff2') format('woff2'),
+        url('fuentes/AgletSans-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Aglet Sans';
+    src: url('fuentes/AgletSans-Regular.woff2') format('woff2'),
+        url('fuentes/AgletSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aglet-Extra';
+    src: url('fuentes/AgletSans-ExtraLight.woff2') format('woff2'),
+        url('fuentes/AgletSans-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}

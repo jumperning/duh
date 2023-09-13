@@ -4,7 +4,7 @@ import ConocenosAnim from "./animation"
 function Conocenos() {
 
     return (
-        <section className="w-full flex flex-col justify-center items-center gap-4 mt-12">
+        <section className="w-full flex flex-col md:flex-row-reverse justify-center items-center gap-4 mt-12 overflow-x-clip">
             <ConocenosAnim />
             <div className="flex flex-col justify-center items-center gap-4">
                 <MainTitle>

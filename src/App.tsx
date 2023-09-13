@@ -1,5 +1,6 @@
 import './App.css'
 import { Comolohacemos } from './components/sections/comolohacemos'
+import Conocenos from './components/sections/conocenos'
 import { Experiencia } from './components/sections/experienciaduh'
 import Header from './components/sections/header'
 import { MarcasCreadores } from './components/sections/marcascreadores'
@@ -9,11 +10,12 @@ function App() {
 
   return (
     <>
-    <Header/>
-    <Pensada/>
-    <Comolohacemos />
-    <MarcasCreadores/>
-   <Experiencia/>
+      <Header />
+      <Conocenos/>
+      <Pensada />
+      <Comolohacemos />
+      <MarcasCreadores />
+      <Experiencia />
     </>
   )
 }

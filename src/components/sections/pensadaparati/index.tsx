@@ -2,12 +2,12 @@
 export const Pensada = () => {
   return (
     <>
-      <section className="flex flex-col justify-around  items-center text-center ">
+      <section className="flex flex-col justify-around  items-center text-center mt-12">
         <div className="p-4 gap-5">
           <div className=" -skew-y-3">
-            <span className="text-[#F4CA58]  text-base">Una plataforma interactiva </span></div>
-          <h2 className="text-white Aglet uppercase text-3xl">pensada para TÍ</h2>
-          <p className="text-white text-base font-light">Métricas y <b> proyecciones de resultados</b> para que puedas tomar la mejor decisión para tu campaña</p>
+            <span className="text-[#F4CA58] text-base">Una plataforma interactiva </span></div>
+          <h2 className="text-white  Aglet-bold uppercase text-3xl">pensada para TÍ</h2>
+          <p className="text-white  Aglet-extra text-base font-light mt-6">Métricas y <b className="Aglet-bold"> proyecciones de resultados</b> para que puedas tomar la mejor decisión para tu campaña</p>
 
 
           <article className="flex flex-col justify-center items-center mt-8">

@@ -1,6 +1,7 @@
 import './App.css'
 import { Comolohacemos } from './components/sections/comolohacemos'
 import Conocenos from './components/sections/conocenos'
+import { Contactanos } from './components/sections/contacto'
 import { Experiencia } from './components/sections/experienciaduh'
 import Header from './components/sections/header'
 import { MarcasCreadores } from './components/sections/marcascreadores'
@@ -16,6 +17,7 @@ function App() {
       <Comolohacemos />
       <MarcasCreadores />
       <Experiencia />
+      <Contactanos/>
     </>
   )
 }

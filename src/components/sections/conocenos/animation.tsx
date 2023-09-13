@@ -7,7 +7,9 @@ function ConocenosAnim() {
     const [scale, setScale] = useState(10);
     const [transitionTimingFunction, setTransitionTimingFunction] = useState("ease-out");
     const [top, setTop] = useState(100);
+    //@ts-ignore
     const [likes, setLikes] = useState(0);
+    //@ts-ignore
     const [comments, setComments] = useState(0);
 
     useEffect(() => {

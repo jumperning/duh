@@ -11,7 +11,7 @@ export default MainTitle
 
 export function Title(props: any) {
     return (
-        <h2 className="-skew-y-3 text-4xl Aglet-bold text-white mb-5 uppercase ">
+        <h2 className="-skew-y-3 text-4xl Aglet-bold text-white uppercase ">
             {props.children}
         </h2>
     )
@@ -19,7 +19,7 @@ export function Title(props: any) {
 
 export function SubTitle(props: any) {
     return (
-        <h3 className="-skew-y-3 text-4xl Aglet-bold text-white mb-5 uppercase ">
+        <h3 className="-skew-y-3 text-4xl Aglet-bold text-white uppercase ">
             {props.children}
         </h3>
     )

@@ -8,12 +8,10 @@ function SocialAnim(props: any) {
     const [ease, setEase] = useState("ease-out");
 
     useEffect(() => {
-        var previousDuration: any;
         setTimeout(() => {
             setTop(-15);
         }, (props.delay * 1000))
         setTimeout(() => {
-            previousDuration = duration;
             setDuration(duration / 1.25);
             setEase("cubic-bezier(0.750, 0.335, 0.695, 1.5)")
             setTop(0);
@@ -67,7 +65,7 @@ function SocialAnim(props: any) {
                 transitionProperty: "all"
             }}
         >
-            <span className="bg-[#FB4949] px-2 py-2 text-sm rounded-lg flex justify-center items-center gap-1">
+            <span className="bg-[#FB4949] px-2 py-2 text-sm rounded-lg flex justify-center items-center gap-1 Aglet">
                 {props.children}
                 {likesDisplay}
             </span>

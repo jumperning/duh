@@ -7,6 +7,7 @@ import { Footer } from './components/sections/footer'
 import Header from './components/sections/header'
 import { MarcasCreadores } from './components/sections/marcascreadores'
 import { Pensada } from './components/sections/pensadaparati'
+import QuienesSomos from './components/sections/quienesomos'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
     <>
       <Header />
       <Conocenos/>
+      <QuienesSomos/>
       <Pensada />
       <Comolohacemos />
       <MarcasCreadores />

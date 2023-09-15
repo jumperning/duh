@@ -12,10 +12,10 @@ function QuienesSomos() {
                 ¡Somos Duh!<br />
                 ¡Evolucionemos juntos!
             </p>
-            <div className="relative w-full py-8">
+            <div className="relative w-full py-8 flex justify-center items-center">
                 <SliderCard bg={true}/>
-                <SliderCard bg={true}/>
-                <SliderCard bg={false}/>
+               {/* <SliderCard bg={true}/>
+                <SliderCard bg={false}/> */}
             </div>
         </section>
     )

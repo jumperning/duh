@@ -12,7 +12,7 @@ import QuienesSomos from './components/sections/quienesomos'
 function App() {
 
   return (
-    <>
+    <div className='sm:hidden'>
       <Header />
       <Conocenos/>
       <QuienesSomos/>
@@ -22,7 +22,7 @@ function App() {
       <Experiencia />
       <Contactanos/>
       <Footer/>
-    </>
+    </div>
   )
 }
 

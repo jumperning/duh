@@ -12,7 +12,7 @@ import QuienesSomos from './components/sections/quienesomos'
 function App() {
 
   return (
-    <div className='sm:hidden'>
+    <div className='overflow-x-hidden'>
       <Header />
       <Conocenos/>
       <QuienesSomos/>

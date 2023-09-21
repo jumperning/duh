@@ -12,25 +12,28 @@ export default function CustomSwiper(props: any) {
         switch (position) {
             case "center":
                 setScale("scale-110");
-                setAlign("justify-center");
+                if (window.innerWidth > 1024) {
+                    setAlign("calc(50% - 175px");
+                } else {
+                    setAlign("calc(50% - 150px");
+                }
                 setZIndex("z-50");
                 setButtonOpacity("opacity-100");
                 break;
             case "left":
                 setScale("scale-100");
-                setAlign("justify-start");
+                setAlign("0px");
                 setZIndex("z-40");
                 setButtonOpacity("opacity-0");
                 break;
             case "right":
                 setScale("scale-100");
-                setAlign("justify-end");
+                setAlign("calc(100% - 300px");
                 setZIndex("z-40");
                 setButtonOpacity("opacity-0");
                 break;
             default:
                 setScale("scale-110");
-                setPaddings("p-0");
                 break;
         }
 
@@ -43,8 +46,12 @@ export default function CustomSwiper(props: any) {
     }, [props.swipePos])
 
     return (
-        <div className={`${scale} ${align} ${zIndex} w-full h-[440px] my-auto inset-0 duration-500 ease-linear flex items-center absolute`}>
-            <div className="h-full w-full absolute z-[100] flex justify-between items-center px-4">
+        <div className={`${scale} ${zIndex} w-[300px] md:w-[350px] h-[440px] my-auto inset-0 duration-500 ease-linear flex items-center absolute`}
+            style={{
+                left: align
+            }}
+        >
+            <div className="w-full absolute z-[100] flex justify-between items-center px-4">
                 <button className={`${buttonOpacity} rounded-full shadow-md duration-300`} onClick={props.previousSwipe}>
                     <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M9.83984 18.4225C8.59 18.4225 7.41315 18.1831 6.30932 17.7042C5.20548 17.2253 4.23305 16.5624 3.39203 15.7155C2.55102 14.8745 1.89105 13.9021 1.41214 12.7982C0.939064 11.6944 0.702528 10.5146 0.702528 9.25895C0.702528 8.00326 0.939064 6.8235 1.41214 5.71966C1.89105 4.61582 2.55102 3.6434 3.39203 2.80238C4.23305 1.96136 5.20256 1.30139 6.30056 0.822479C7.40439 0.343566 8.58124 0.104109 9.83108 0.104109C11.0868 0.104109 12.2665 0.343566 13.3704 0.822479C14.4742 1.30139 15.4466 1.96136 16.2877 2.80238C17.1287 3.6434 17.7857 4.61582 18.2588 5.71966C18.7377 6.8235 18.9772 8.00326 18.9772 9.25895C18.9772 10.5146 18.7377 11.6944 18.2588 12.7982C17.7857 13.9021 17.1287 14.8745 16.2877 15.7155C15.4466 16.5624 14.4742 17.2253 13.3704 17.7042C12.2665 18.1831 11.0897 18.4225 9.83984 18.4225ZM11.6358 13.6655C11.8051 13.4903 11.8869 13.2859 11.8811 13.0523C11.8811 12.8187 11.8022 12.623 11.6445 12.4653L8.20161 9.25895L11.6445 6.06132C11.8081 5.89779 11.8869 5.69922 11.8811 5.4656C11.8811 5.22615 11.7964 5.02757 11.627 4.86988C11.4693 4.71803 11.2795 4.64503 11.0576 4.65087C10.8415 4.65087 10.6517 4.72971 10.4881 4.8874L6.89628 8.25148C6.70355 8.42669 6.57506 8.63986 6.51081 8.891C6.44657 9.1363 6.44657 9.38452 6.51081 9.63565C6.57506 9.88095 6.70355 10.0941 6.89628 10.2752L10.4881 13.6393C10.6341 13.7853 10.8269 13.8612 11.0663 13.867C11.3058 13.867 11.4956 13.7999 11.6358 13.6655Z" fill="#FFFDFD" />

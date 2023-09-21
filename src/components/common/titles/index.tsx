@@ -11,7 +11,7 @@ export default MainTitle
 
 export function Title(props: any) {
     return (
-        <h2 className="-skew-y-3 text-4xl Aglet-bold text-white uppercase ">
+        <h2 className={`${props.className} -skew-y-3 text-4xl Aglet-bold text-white uppercase`}>
             {props.children}
         </h2>
     )

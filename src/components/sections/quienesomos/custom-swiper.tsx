@@ -11,7 +11,7 @@ export default function CustomSwiper(props: any) {
     useEffect(() => {
         switch (position) {
             case "center":
-                setScale("scale-110");
+                setScale("scale-100");
                 if (window.innerWidth > 1024) {
                     setAlign("calc(50% - 175px");
                 } else {
@@ -21,13 +21,13 @@ export default function CustomSwiper(props: any) {
                 setButtonOpacity("opacity-100");
                 break;
             case "left":
-                setScale("scale-100");
+                setScale("scale-90");
                 setAlign("0px");
                 setZIndex("z-40");
                 setButtonOpacity("opacity-0");
                 break;
             case "right":
-                setScale("scale-100");
+                setScale("scale-90");
                 setAlign("calc(100% - 300px");
                 setZIndex("z-40");
                 setButtonOpacity("opacity-0");
@@ -46,7 +46,7 @@ export default function CustomSwiper(props: any) {
     }, [props.swipePos])
 
     return (
-        <div className={`${scale} ${zIndex} w-[300px] md:w-[350px] h-[440px] my-auto inset-0 duration-500 ease-linear flex items-center absolute`}
+        <div className={`${scale} ${zIndex} w-[300px] lg:w-[350px] h-[440px] my-auto inset-0 duration-500 ease-linear flex items-center absolute`}
             style={{
                 left: align
             }}

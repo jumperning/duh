@@ -3,7 +3,7 @@ export const Footer = () => {
     return (
         <footer className='bg-black/20 flex flex-col justify-around items-center gap-8 py-8'>
             <figure>
-                <img src="img/logo.svg" alt="Duh!" className='w-24'/>
+                <img src="img/logo.svg" alt="Duh!" className='w-24' />
             </figure>
             <div>
                 <ul className='flex gap-8'>
@@ -14,7 +14,7 @@ export const Footer = () => {
                     </li>
                     <li>
                         <a href="#">
-                            <img src="img/in.svg" alt="Instagram" />
+                            <img src="img/in.svg" alt="LinkedIn" />
                         </a>
                     </li>
                 </ul>

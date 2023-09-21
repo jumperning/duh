@@ -6,6 +6,7 @@
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Aglet-italic-bold';
     src: url('../fuentes/AgletSans-BoldItalic.woff2') format('woff2'),
@@ -38,7 +39,19 @@
 body {
     background-color: #965BDD;
 }
-.Aglet{font-family: 'Aglet Sans';}
-.Aglet-bold{font-family: 'Aglet-bold';}
-.Aglet-extra{font-family: 'Aglet-Extra';}
-.Aglet-italic-bold {font-family: 'Aglet-italic-bold';}
+
+.Aglet {
+    font-family: 'Aglet Sans';
+}
+
+.Aglet-bold {
+    font-family: 'Aglet-bold';
+}
+
+.Aglet-extra {
+    font-family: 'Aglet-Extra';
+}
+
+.Aglet-italic-bold {
+    font-family: 'Aglet-italic-bold';
+}

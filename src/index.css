@@ -12,8 +12,7 @@
 }
 @font-face {
     font-family: 'Aglet-italic-bold';
-    src: url('fuentes/AgletSans-BoldItalic.woff2') format('woff2'),
-        url('fuentes/AgletSans-BoldItalic.woff') format('woff');
+    src: url('fuentes/AgletSans-BoldItalic.woff') format('woff');
     font-weight: bold;
     font-style: italic;
     font-display: swap;

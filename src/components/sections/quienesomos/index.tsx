@@ -70,7 +70,7 @@ function QuienesSomos() {
             <div className="relative max-w-[800px] w-full mx-auto py-8 h-[460px]">
                 <CustomSwiper nextSwipe={nextSwipe} previousSwipe={previousSwipe} swipePos={swipePos[0]} initialPosition="left">
                     <SliderCard swipePos={swipePos[0]} bg={true} >
-                        <p className="-skew-y-3 Aglet-sans uppercase text-center">
+                        <p className="-skew-y-3 uppercase text-center">
                             ¿Quieres llegar<br />
                             A la audiencia deseada?
                         </p>

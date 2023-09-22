@@ -12,7 +12,7 @@ import QuienesSomos from './components/sections/quienesomos'
 function App() {
 
   return (
-    <div className='overflow-x-hidden'>
+    <div className='overflow-x-hidden Aglet'>
       <Header />
       <Conocenos/>
       <QuienesSomos/>

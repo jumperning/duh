@@ -5,6 +5,8 @@ export const Comolohacemos = () => {
 
     const [actualScroll, setActualScroll] = useState(0);
     const [top, setTop] = useState("80px");
+    const [transition, setTransition] = useState(".5s");
+    const [ease, setEase] = useState("ease-in");
 
     useEffect(() => {
         setTimeout(() => {
@@ -14,18 +16,30 @@ export const Comolohacemos = () => {
     }, [])
 
     useEffect(() => {
-        console.log(actualScroll)
+        const time = 5000;
+        setTransition('.5s');
+        setEase("ease-in");
         setTimeout(() => {
             var auxScroll = 0;
             if (actualScroll >= 4) {
                 auxScroll = 0;
-                setTop("80px");
+                setTop("120px");
             } else {
                 auxScroll = actualScroll + 1;
-                setTop("-" + ((160 * (actualScroll + 1)) - 80) + "px");
+                setTop("-" + ((160 * (actualScroll + 1)) - 40) + "px");
             }
             setActualScroll(auxScroll);
-        }, 5000)
+        }, time)
+        setTimeout(() => {
+            setTransition(".25s");
+            setEase('ease-out');
+            if (actualScroll >= 4) {
+                setTop("80px");
+            } else {
+                setTop("-" + ((160 * (actualScroll + 1)) - 80) + "px");
+            }
+
+        }, time + 500)
     }, [actualScroll])
 
     return (
@@ -38,9 +52,11 @@ export const Comolohacemos = () => {
             <div className="relative w-[600px]">
                 <div className="gradient">
                     <div className="lg:h-[400px] lg:overflow-x-hidden lg:overflow-y-hidden lg:snap-y relative w-full">
-                        <div className="w-full duration-500 absolute"
+                        <div className="w-full absolute"
                             style={{
-                                top: top
+                                top: top,
+                                transitionDuration: transition,
+                                transitionTimingFunction: ease
                             }}>
                             <HowItem number="1" title="SELECCIÓN">
                                 Seleccionamos los perfiles <br /> adecuados según <b className="Aglet-bold"> la estrategia de marketing </b> de tu marca.

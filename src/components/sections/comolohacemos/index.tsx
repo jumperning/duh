@@ -5,13 +5,15 @@ export const Comolohacemos = () => {
 
     const [actualScroll, setActualScroll] = useState(0);
 
+    const item0 = useRef<any>(null);
     const item1 = useRef<any>(null);
     const item2 = useRef<any>(null);
     const item3 = useRef<any>(null);
     const item4 = useRef<any>(null);
     const item5 = useRef<any>(null);
+    const item6 = useRef<any>(null);
 
-    const refs = [item1, item2, item3, item4, item5];
+    const refs = [item0, item1, item2, item3, item4, item5, item6];
 
     useEffect(() => {
         setTimeout(() => {
@@ -21,16 +23,23 @@ export const Comolohacemos = () => {
     }, [])
 
     useEffect(() => {
+        var time = 5000;
+        if (actualScroll == 0 || actualScroll == 1) {
+            time = 1000;
+        } else {
+            time = 5000;
+        }
         setTimeout(() => {
             var auxActualScroll;
-            if (actualScroll == 4) {
+            if (actualScroll == 6) {
                 auxActualScroll = 0;
             } else {
                 auxActualScroll = actualScroll + 1;
             }
             setActualScroll(auxActualScroll);
             refs[auxActualScroll].current.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
-        }, 2000)
+            console.log(auxActualScroll);
+        }, time)
     }, [actualScroll])
 
     return (
@@ -43,7 +52,7 @@ export const Comolohacemos = () => {
             <div className="relative">
                 <div className="gradient">
                     <div className="lg:h-[400px] lg:overflow-x-hidden lg:overflow-y-hidden lg:snap-y">
-                        <span className="w-full h-[140px]" />
+                        <div ref={item0} className="w-full h-[80px]" />
                         <HowItem fowardRef={item1} number="1" title="SELECCIÓN">
                             Seleccionamos los perfiles <br /> adecuados según <b className="Aglet-bold"> la estrategia de marketing </b> de tu marca.
                         </HowItem>
@@ -59,7 +68,7 @@ export const Comolohacemos = () => {
                         <HowItem fowardRef={item5} number="5" title="SELECCIÓN">
                             Entregamos métricas y reportes online de resultados.
                         </HowItem>
-                        <span className="w-full h-[140px]" />
+                        <div ref={item6} className="w-full h-[160px]" />
                     </div>
                 </div>
             </div>

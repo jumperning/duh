@@ -1,45 +1,31 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import HowItem from "./items"
 
 export const Comolohacemos = () => {
 
     const [actualScroll, setActualScroll] = useState(0);
-
-    const item0 = useRef<any>(null);
-    const item1 = useRef<any>(null);
-    const item2 = useRef<any>(null);
-    const item3 = useRef<any>(null);
-    const item4 = useRef<any>(null);
-    const item5 = useRef<any>(null);
-    const item6 = useRef<any>(null);
-
-    const refs = [item0, item1, item2, item3, item4, item5, item6];
+    const [top, setTop] = useState("80px");
 
     useEffect(() => {
         setTimeout(() => {
+            setTop("80px");
             setActualScroll(0);
-            refs[0].current.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
         }, 2000)
     }, [])
 
     useEffect(() => {
-        var time = 5000;
-        if (actualScroll == 0 || actualScroll == 1) {
-            time = 1000;
-        } else {
-            time = 5000;
-        }
+        console.log(actualScroll)
         setTimeout(() => {
-            var auxActualScroll;
-            if (actualScroll == 6) {
-                auxActualScroll = 0;
+            var auxScroll = 0;
+            if (actualScroll >= 4) {
+                auxScroll = 0;
+                setTop("80px");
             } else {
-                auxActualScroll = actualScroll + 1;
+                auxScroll = actualScroll + 1;
+                setTop("-" + ((160 * (actualScroll + 1)) - 80) + "px");
             }
-            setActualScroll(auxActualScroll);
-            refs[auxActualScroll].current.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
-            console.log(auxActualScroll);
-        }, time)
+            setActualScroll(auxScroll);
+        }, 5000)
     }, [actualScroll])
 
     return (
@@ -49,26 +35,29 @@ export const Comolohacemos = () => {
                 <p className="text-white font-light">¿Quieres formar parte del ecosistema Duh!? <br />
                     <b className="Aglet-bold"> ¡Contáctanos!</b></p>
             </div>
-            <div className="relative">
+            <div className="relative w-[600px]">
                 <div className="gradient">
-                    <div className="lg:h-[400px] lg:overflow-x-hidden lg:overflow-y-hidden lg:snap-y">
-                        <div ref={item0} className="w-full h-[80px]" />
-                        <HowItem fowardRef={item1} number="1" title="SELECCIÓN">
-                            Seleccionamos los perfiles <br /> adecuados según <b className="Aglet-bold"> la estrategia de marketing </b> de tu marca.
-                        </HowItem>
-                        <HowItem fowardRef={item2} number="2" title="CONTRATACIÓN">
-                            Contratamos y brifeamos a los <b className="Aglet-bold">creadores de contenido.</b>
-                        </HowItem>
-                        <HowItem fowardRef={item3} number="3" title="PRODUCCIÓN Y APROBACIÓN">
-                            La producción de contenido pasa por etapas de aprobación entre Duh! y tu equipo.
-                        </HowItem>
-                        <HowItem fowardRef={item4} number="4" title="GESTIÓN">
-                            Gestionamos, calendarizamos y hacemos <b className="Aglet-bold"> seguimiento de las publicaciones.</b>
-                        </HowItem>
-                        <HowItem fowardRef={item5} number="5" title="SELECCIÓN">
-                            Entregamos métricas y reportes online de resultados.
-                        </HowItem>
-                        <div ref={item6} className="w-full h-[160px]" />
+                    <div className="lg:h-[400px] lg:overflow-x-hidden lg:overflow-y-hidden lg:snap-y relative w-full">
+                        <div className="w-full duration-500 absolute"
+                            style={{
+                                top: top
+                            }}>
+                            <HowItem number="1" title="SELECCIÓN">
+                                Seleccionamos los perfiles <br /> adecuados según <b className="Aglet-bold"> la estrategia de marketing </b> de tu marca.
+                            </HowItem>
+                            <HowItem number="2" title="CONTRATACIÓN">
+                                Contratamos y brifeamos a los <b className="Aglet-bold">creadores de contenido.</b>
+                            </HowItem>
+                            <HowItem number="3" title="PRODUCCIÓN Y APROBACIÓN">
+                                La producción de contenido pasa por etapas de aprobación entre Duh! y tu equipo.
+                            </HowItem>
+                            <HowItem number="4" title="GESTIÓN">
+                                Gestionamos, calendarizamos y hacemos <b className="Aglet-bold"> seguimiento de las publicaciones.</b>
+                            </HowItem>
+                            <HowItem number="5" title="SELECCIÓN">
+                                Entregamos métricas y reportes online de resultados.
+                            </HowItem>
+                        </div>
                     </div>
                 </div>
             </div>

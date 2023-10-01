@@ -9,37 +9,41 @@ export const Comolohacemos = () => {
     const [ease, setEase] = useState("ease-in");
 
     useEffect(() => {
-        setTimeout(() => {
-            setTop("80px");
-            setActualScroll(0);
-        }, 2000)
+        if (window.innerWidth > 1023) {
+            setTimeout(() => {
+                setTop("80px");
+                setActualScroll(0);
+            }, 2000)
+        }
     }, [])
 
     useEffect(() => {
-        const time = 5000;
-        setTransition('.5s');
-        setEase("ease-in");
-        setTimeout(() => {
-            var auxScroll = 0;
-            if (actualScroll >= 4) {
-                auxScroll = 0;
-                setTop("120px");
-            } else {
-                auxScroll = actualScroll + 1;
-                setTop("-" + ((160 * (actualScroll + 1)) - 40) + "px");
-            }
-            setActualScroll(auxScroll);
-        }, time)
-        setTimeout(() => {
-            setTransition(".25s");
-            setEase('ease-out');
-            if (actualScroll >= 4) {
-                setTop("80px");
-            } else {
-                setTop("-" + ((160 * (actualScroll + 1)) - 80) + "px");
-            }
+        if (window.innerWidth > 1023) {
+            const time = 5000;
+            setTransition('.5s');
+            setEase("ease-in");
+            setTimeout(() => {
+                var auxScroll = 0;
+                if (actualScroll >= 4) {
+                    auxScroll = 0;
+                    setTop("120px");
+                } else {
+                    auxScroll = actualScroll + 1;
+                    setTop("-" + ((160 * (actualScroll + 1)) - 40) + "px");
+                }
+                setActualScroll(auxScroll);
+            }, time)
+            setTimeout(() => {
+                setTransition(".25s");
+                setEase('ease-out');
+                if (actualScroll >= 4) {
+                    setTop("80px");
+                } else {
+                    setTop("-" + ((160 * (actualScroll + 1)) - 80) + "px");
+                }
 
-        }, time + 500)
+            }, time + 500)
+        }
     }, [actualScroll])
 
     return (
@@ -49,10 +53,10 @@ export const Comolohacemos = () => {
                 <p className="text-white font-light">¿Quieres formar parte del ecosistema Duh!? <br />
                     <b className="Aglet-bold"> ¡Contáctanos!</b></p>
             </div>
-            <div className="relative w-[600px]">
+            <div className="relative lg:w-[600px]">
                 <div className="gradient">
                     <div className="lg:h-[400px] lg:overflow-x-hidden lg:overflow-y-hidden lg:snap-y relative w-full">
-                        <div className="w-full absolute"
+                        <div className="w-full lg:absolute"
                             style={{
                                 top: top,
                                 transitionDuration: transition,

@@ -26,7 +26,7 @@ export const MarcasCreadores = () => {
   }, [isInViewport])
 
   return (
-    <section ref={thisSection} className='mt-32 flex flex-col lg:flex-row lg:gap-4 lg:justify-center lg:items-center  Aglet-italic-bold text-center'>
+    <section ref={thisSection} className='mt-32 flex flex-col sm:h-[30vh] lg:flex-row lg:gap-4 lg:justify-center lg:items-center  Aglet-italic-bold text-center'>
       <h3 className='text-3xl lg:text-6xl text-white uppercase'
         style={{
           marginRight: left + "px",

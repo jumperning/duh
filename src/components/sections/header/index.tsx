@@ -6,8 +6,8 @@ export default function Header() {
     const menuOptions = [
         { id: "", name: "Qué hacemos" },
         { id: "quienes", name: "Quiénes somos" },
-        { id: "", name: "Nuestra tech" },
-        { id: "", name: "Experiencia Duh!" }
+        { id: "pensadaparati", name: "Nuestra tech" },
+        { id: "experiencia", name: "Experiencia Duh!" }
     ]
 
     const [showMenu, setShowMenu] = useState(false);
@@ -18,14 +18,14 @@ export default function Header() {
 
     return (
         <nav className="w-full flex justify-center items-center">
-            <div className="w-full p-6 flex flex-row justify-between items-start lg:items-center max-w-[1280px] bg-[#965BDD]">
+            <div className="w-full p-6 flex flex-row justify-between items-start lg:items-center max-w-[1280px] ">
                 <img src="img/logo.svg" className="z-50"/>
                 <div className="flex w-full justify-end">
                     <button className="lg:hidden" onClick={handleMenu}>
                         <img className="z-50" src="img/menu.svg" />
                     </button>
                     <div
-                        className={`${showMenu ? "opacity-100" : "lg:opacity-100 opacity-0"} z-30 bg-[#965BDD] duration-300 absolute inset-x-0 lg:static flex flex-col lg:flex-row justify-end items-center gap-2 lg:gap-8 w-full lg:w-auto shadow-md lg:shadow-none pb-4 Aglet`}
+                        className={`${showMenu ? "opacity-100" : "lg:opacity-100 opacity-0"} z-30 duration-300 absolute inset-x-0 lg:static flex flex-col lg:flex-row justify-end items-center gap-2 lg:gap-8 w-full lg:w-auto shadow-md lg:shadow-none pb-4 Aglet`}
                         style={{
                             top: showMenu ? '90px' : '-250px'
                         }}

@@ -8,7 +8,7 @@ export const Contactanos = () => {
                 <p className='text-white Aglet-extra text-md'>Escribinos y te mostramos <br />
                     la experiencia 360° de Duh!</p>
             </div>
-            <div className="text-left">
+            <div className="text-left hidden sm:block">
                 <h2 className='text-4xl Aglet-italic-bold text-white -skew-y-6 uppercase text-left mt-8'>¿En qué podemos  <br />
                     colaborar?</h2>
                     <p className="text-white mt-11 text-left ">Escríbenos y vive la experiencia <br />

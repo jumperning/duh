@@ -1,7 +1,7 @@
 function MainTitle(props: any) {
 
     return (
-        <h1 className="-skew-y-3 text-4xl Aglet-bold text-white mb-5 uppercase text-center">
+        <h1 className="skew-y-[-6.5deg]  text-4xl sm:text-7xl Aglet-italic-bold text-white mb-5 uppercase text-center sm:text-left sm:leading-[3.4rem]">
             {props.children}
         </h1>
     )

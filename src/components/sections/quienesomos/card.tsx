@@ -27,7 +27,7 @@ export default function SliderCard(props: any) {
     return (
         <article className={`w-[300px] lg:w-[350px] mx-auto absolute`}>
             <div className={`bg-[#965BDDA6] ${props.bg ? "shadow-xl" : ""} backdrop-blur-md rounded-lg aspect-square w-[300px] lg:w-[350px] relative mx-auto`}>
-                <div className={`${props.bg ? "" : "hidden"} w-full h-10 lg:h-12 bg-white flex justify-between items-center py-2 pl-3 pr-4`}>
+                <div className={`${props.bg ? "" : "hidden"} w-full h-10 lg:h-12 bg-white flex justify-between items-center py-2 pl-3 pr-4 rounded-t-lg`}>
                     <div className="flex justify-start items-center flex-row gap-2">
                         <img src="img/logo.svg" className="bg-[#6A11D6] p-1 rounded-full h-6" />
                         <p className="Aglet text-xs lg:text-sm">Duh!</p>

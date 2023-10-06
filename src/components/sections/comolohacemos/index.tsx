@@ -47,10 +47,10 @@ export const Comolohacemos = () => {
     }, [actualScroll])
 
     return (
-        <section className="text-center gap-4 mt-28 flex flex-col lg:flex-row justify-center items-center ">
+        <section className="text-center gap-4 sm:gap-24 mt-28 flex flex-col lg:flex-row justify-center items-center sm:h-[40vh] ">
             <div className="flex justify-center items-center flex-col lg:text-right">
                 <h3 className="-skew-y-3 text-4xl Aglet-bold text-white mb-5 uppercase lg:text-right lg:leading-[3rem] lg:text-6xl">¿cómo lo <br className="hidden lg:block" /> hacemos?</h3>
-                <p className="text-white font-light">¿Quieres formar parte del ecosistema Duh!? <br />
+                <p className="text-white font-light Aglet-Extra">¿Quieres formar parte del ecosistema Duh!? <br />
                     <b className="Aglet-bold"> ¡Contáctanos!</b></p>
             </div>
             <div className="relative lg:w-[600px]">

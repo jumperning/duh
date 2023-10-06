@@ -16,17 +16,17 @@ export const Pensada = () => {
         case "info":
           setVideoIcon("img/info.svg");
           setVideoTitle("Información demográfica y perfiles");
-          setVideoDescription("Lorem ipsum dolor sit amet consectetur. Tellus turpis non consequat dictum faucibus ultricies.");
+          setVideoDescription("Aquí podrás ver perfiles de content creators que hagan fit con la estrategia de tu marca. Por medio de data intelligence mostramos estadísticas del perfil y de su audiencia. ");
           break;
         case "seleccion":
           setVideoIcon("img/seleccion.svg");
           setVideoTitle("Posibilidad de seleccionar perfiles");
-          setVideoDescription("Lorem ipsum dolor sit amet consectetur. Tellus turpis non consequat dictum faucibus ultricies.");
+          setVideoDescription("Mediante un Planner online podrás ver tu Creator List dónde se aprueban perfiles y presupuestos, también tendrás a disposición el proceso de revisión de contenido y fechas de publicación. ");
           break;
         case "reporte":
           setVideoIcon("img/reporte.svg");
           setVideoTitle("Reportes con métricas finales");
-          setVideoDescription("Lorem ipsum dolor sit amet consectetur. Tellus turpis non consequat dictum faucibus ultricies.");
+          setVideoDescription("Podrás ver estadísticas de campaña, métricas por influencer y el éxito de cada publicación. Es fundamental contar con datos para poder entender el engagement y ROI de tus lanzamientos.");
           break;
         default:
           setVideoDescription("Cargando...");
@@ -40,7 +40,7 @@ export const Pensada = () => {
 
   return (
     <>
-      <section className="flex flex-col justify-around items-center text-center mt-12">
+      <section className="flex flex-col justify-around items-center text-center mt-12" id="pensadaparati">
         <div className="p-4 gap-5">
           <div className=" -skew-y-3">
             <span className="text-[#F4CA58] text-base md:text-3xl Aglet-Sans">Una plataforma interactiva </span></div>
@@ -75,14 +75,14 @@ export const Pensada = () => {
               <img src="img/reporte.png" width="50px" />
             </PensadaVideoNav>
           </div>
-          <div className="absolute z-20">
+          <div className="absolute z-20 sm:bg-black/50 p-20 rounded-2xl">
             <PensadaItemNoIMG opacity={videoDataOpacity} img={videoIcon} description={videoDescription}>
               {videoTitle}
             </PensadaItemNoIMG>
-            <img src="img/mirarVideo.svg" alt="" className="z-20 mx-auto" />
+            {/* <img src="img/mirarVideo.svg" alt="" className="z-20 mx-auto" /> */}
           </div>
-
-          <img src="img/video.png" alt="video" className="w-full md:w-3/4 relative md:rounded-3xl aspect-video" />
+          <video loop muted autoPlay src="img/video.mp4" className="w-full md:w-3/4 relative md:rounded-3xl aspect-video"></video>
+         
         </div>
       </section>
       <>

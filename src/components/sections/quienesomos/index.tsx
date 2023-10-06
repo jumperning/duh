@@ -17,9 +17,11 @@ function QuienesSomos() {
             loop: true,
             slidesPerView: 1,
             spaceBetween: -600,
+           
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
+                
             },
         });
     }, [])
@@ -59,7 +61,8 @@ function QuienesSomos() {
     }
 
     return (
-        <section id="quienes" className="mt-12 w-full flex justify-center items-center flex-col">
+        <section id="quienes" className="mt-44 sm:mt-12 w-full flex justify-center items-center flex-col">
+            <div className="sm:hidden">
             <Title>
                 ¿Quiénes somos?
             </Title>
@@ -67,7 +70,8 @@ function QuienesSomos() {
                 ¡Somos Duh!<br />
                 ¡Evolucionemos juntos!
             </p>
-            <div className="relative max-w-[800px] w-full mx-auto py-8 h-[460px]">
+            </div>
+            <div className="relative max-w-[800px] w-full mx-auto py-8 h-[460px] sm:h-[60vh] lg:max-w-[800px]">
                 <CustomSwiper nextSwipe={nextSwipe} previousSwipe={previousSwipe} swipePos={swipePos[0]} initialPosition="left">
                     <SliderCard swipePos={swipePos[0]} bg={true} >
                         <p className="-skew-y-3 uppercase text-center">

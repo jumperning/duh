@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { PensadaItem, PensadaItemNoIMG, PensadaVideoNav } from "./item"
-const VideoModal = ({ isOpen, onClose, videoSrc }) => {
+const VideoModal: React.FC<{ isOpen: boolean; onClose: () => void; videoSrc: string }> = ({ isOpen, onClose, videoSrc }) => {
+ 
   return (
     <div className={`fixed w-full h-screen bg-black/75 z-50 top-0 ${isOpen ? 'block' : 'hidden'}`}>
       <div className=" flex justify-center items-center  h-screen relative">

@@ -55,8 +55,8 @@ export const Comolohacemos = () => {
             </div>
             <div className="relative lg:w-[600px]">
                 <div className="gradient">
-                    <div className="lg:h-[400px] lg:overflow-x-hidden lg:overflow-y-hidden lg:snap-y relative w-full">
-                        <div className="w-full lg:absolute"
+                    <div className="lg:h-[400px] overflow-auto lg:snap-y relative w-full">
+                        <div className="w-full  lg:absolute"
                             style={{
                                 top: top,
                                 transitionDuration: transition,

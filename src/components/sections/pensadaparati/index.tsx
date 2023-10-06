@@ -1,6 +1,17 @@
 import { useEffect, useState } from "react";
 import { PensadaItem, PensadaItemNoIMG, PensadaVideoNav } from "./item"
-
+const VideoModal = ({ isOpen, onClose, videoSrc }) => {
+  return (
+    <div className={`fixed w-full h-screen bg-black/75 z-50 top-0 ${isOpen ? 'block' : 'hidden'}`}>
+      <div className=" flex justify-center items-center  h-screen relative">
+        <div className="w-full md:w-3/4 relative ">
+        <span className="close text-red z-30  bg-red-500 text-white text-3xl  w-14 h-14 text-center justify-center items-center flex rounded-full absolute -top-12 -right-12 cursor-pointer" onClick={onClose}>x</span>
+        <video controls loop muted src={videoSrc} className="w-full relative md:rounded-3xl aspect-video"></video>
+        </div>
+      </div>
+    </div>
+  );
+};
 export const Pensada = () => {
 
   const [selectedId, setSelectedId] = useState("info");
@@ -8,7 +19,10 @@ export const Pensada = () => {
   const [videoTitle, setVideoTitle] = useState("Cargando...");
   const [videoIcon, setVideoIcon] = useState("");
   const [videoDataOpacity, setVideoDataOpacity] = useState("opacity-100");
+  const [isVideoModalOpen, setVideoModalOpen] = useState(false);
 
+  const openVideoModal = () => setVideoModalOpen(true);
+  const closeVideoModal = () => setVideoModalOpen(false);
   useEffect(() => {
     setVideoDataOpacity("opacity-0");
     setTimeout(() => {
@@ -75,14 +89,17 @@ export const Pensada = () => {
               <img src="img/reporte.png" width="50px" />
             </PensadaVideoNav>
           </div>
-          <div className="absolute z-20 sm:bg-black/50 p-20 rounded-2xl">
+          <div className="absolute z-20">
             <PensadaItemNoIMG opacity={videoDataOpacity} img={videoIcon} description={videoDescription}>
               {videoTitle}
             </PensadaItemNoIMG>
-            {/* <img src="img/mirarVideo.svg" alt="" className="z-20 mx-auto" /> */}
+            <img src="img/mirarVideo.svg" alt="" className="z-20 mx-auto cursor-pointer" onClick={openVideoModal} />
+    
           </div>
-          <video loop muted autoPlay src="img/video.mp4" className="w-full md:w-3/4 relative md:rounded-3xl aspect-video"></video>
-         
+          <img src="img/video.png" alt=""  className="w-full md:w-3/4 relative md:rounded-3xl aspect-video" /> 
+
+          <VideoModal isOpen={isVideoModalOpen} onClose={closeVideoModal} videoSrc="img/video.mp4" />
+     
         </div>
       </section>
       <>

@@ -23,7 +23,7 @@ export default function InstagramProfile(props: any) {
         <div className="flex flex-row justify-between gap-3 items-center space-y-2">
             <div className='flex justify-center items-center gap-3'>
                 <div className="from-instagramYellow via-instagramOrange to-instagramPurple relative rounded-full bg-gradient-to-tr p-1">
-                    <a href="#" className="block rounded-full bg-[#F2F2F2] p-1">
+                    <a href={"https://instagram.com/" + props.influencer.nombre} target="_blank" className="block rounded-full bg-[#F2F2F2] p-1">
                         <img className="h-16 w-16 max-w-none rounded-full object-cover" src={props.influencer.img} />
                     </a>
                 </div>

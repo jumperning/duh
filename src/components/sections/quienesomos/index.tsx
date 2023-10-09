@@ -1,30 +1,13 @@
 import { Title } from "../../common/titles"
 import SliderCard from "./card"
-import Swiper from 'swiper';
-import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import CustomSwiper from "./custom-swiper";
 
 function QuienesSomos() {
 
     const [swipePos, setSwipePos] = useState(["left", "center", "right"]);
-
-    useEffect(() => {
-        new Swiper('.swiper', {
-            modules: [Navigation],
-            loop: true,
-            slidesPerView: 1,
-            spaceBetween: -600,
-           
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-                
-            },
-        });
-    }, [])
 
     function nextSwipe() {
         var auxSwipePos: any = [];

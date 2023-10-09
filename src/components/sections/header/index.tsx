@@ -25,9 +25,10 @@ export default function Header() {
                         <img className="z-50" src="img/menu.svg" />
                     </button>
                     <div
-                        className={`${showMenu ? "opacity-100" : "lg:opacity-100 opacity-0"} z-30 duration-300 absolute inset-x-0 lg:static flex flex-col lg:flex-row justify-end items-center gap-2 lg:gap-8 w-full lg:w-auto shadow-md lg:shadow-none pb-4 Aglet`}
+                        className={`${showMenu ? "opacity-100 bg-[#7c52ad] sm:bg-transparent" : "lg:opacity-100 opacity-0"} z-30 duration-300 absolute inset-x-0 lg:static flex flex-col lg:flex-row justify-end items-center gap-2 lg:gap-8 w-full lg:w-auto shadow-md lg:shadow-none pb-4 Aglet`}
                         style={{
-                            top: showMenu ? '90px' : '-250px'
+                            top: showMenu ? '88px' : '-250px',
+                            
                         }}
                     >
                         {menuOptions.map((menu: { id: string, name: string }, index: number) => {

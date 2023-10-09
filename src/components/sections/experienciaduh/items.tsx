@@ -15,7 +15,7 @@ export const ExperienciaItem = (props: any) => {
                     <h3 className='text-[#6A11D6] text-2xl lg:text-3xl Aglet-bold'>{props.exp.Titulo}</h3>
                     <p className="lg:text-lg">{props.exp.Texto}</p>
                     <h4 className='text-[#6A11D6] text-xl Aglet-bold'>Influencers</h4>
-                    <div className={`grid ${rowCount < 3 ? 'grid-cols-1' : 'grid-cols-2'} grid-rows-${rowCount} gap-4`}>
+                    <div className={`grid ${rowCount < 3 ? 'grid-cols-1' : 'lg:grid-cols-2'} grid-rows-${rowCount} gap-4`}>
                         {props.exp.Influencers.map((influencer: any, index: number) => {
                             return (
                                 <Fragment key={index}>

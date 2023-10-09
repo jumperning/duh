@@ -1,0 +1,147 @@
+[
+    {
+      "Titulo": "Experiencia Duh! Supervielle",
+      "Texto": "Banco Supervielle presentó su nueva Cuenta Hit y nos eligió para contarlo a través de influencers. Como parte de la estrategia acompañamos a los creadores de contenido Cristóbal Combes y Juli Castro al impresionante show de Fuerza Bruta, donde el Banco Supervielle instaló su activación para que mostraran en sus redes toda la experiencia.",
+      "Video":"supervilleVideo.png",
+      "Influencers": [
+        {
+          "img": "img/cristobalcombes.png",
+          "nombre": "cristobalcombes",
+          "followers": 265000
+        },
+        {
+          "img": "img/julicastroo.png",
+          "nombre": "juli.castroo",
+          "followers": 700000
+        }
+      ],
+      "Resultado": {
+        "Followers": "370000 personas",
+        "Reproducciones": "600000 reproducciones",
+        "Engagement": "4%"
+      }
+    },
+    {
+      "Titulo": "Aumentando el tráfico en las concesionarias Renault",
+      "Texto": "El objetivo de Renault fue aumentar el tráfico de gente que visitó los concesionarios oficiales durante Agosto. En conjunto con Duh! Creators planificaron y ejecutaron una gran campaña con celebrities.",
+      "Video":"RenaultVideo.png",
+      "Influencers": [
+        {
+          "img": "img/gsoffritti.png",
+          "nombre": "gsoffritti",
+          "followers": 1300000
+        },
+        {
+          "img": "img/dariobarassi.png",
+          "nombre": "dariobarassi",
+          "followers": 4400000
+        },
+        {
+          "img": "img/holasoylaurita.png",
+          "nombre": "holasoylaurita",
+          "followers": 4900000
+        },
+        {
+          "img": "img/sabrinagarciarena.png",
+          "nombre": "sabrinagarciarena",
+          "followers": 1400000
+        },
+        {
+          "img": "img/florivigna.png",
+          "nombre": "florivigna",
+          "followers": 5400000
+        }
+      ],
+      "Resultado": {
+        "Followers": "9600000 personas",
+        "Impresiones": "1500000",
+        "Content creators": 5
+      }
+    },
+    {
+      "Titulo": "Amplificando el lanzamiento de cabinas renovadas con Duh!",
+      "Texto": "LATAM buscó potenciar el alcance del lanzamiento de sus cabinas completamente renovadas en Lima, Perú. El objetivo fue comunicar los pilares de la marca LATAM: calidad, comodidad y puntualidad. Dejaron en manos de Duh! Creators la estrategia comunicacional del evento de lanzamiento por medio de creadores de contenido de Perú, Chile, Argentina y Ecuador.",
+      "Video":"LATAMVideo.png",
+      "Influencers": [
+        {
+          "img": "img/vale_caballero.png",
+          "nombre": "vale_caballero",
+          "followers": 366000
+        },
+        {
+          "img": "img/constanzabaezjalil.png",
+          "nombre": "constanzabaezjalil",
+          "followers": 661000
+        },
+        {
+          "img": "img/virginialimongis.png",
+          "nombre": "virginialimongis",
+          "followers": 364000
+        },
+        {
+          "img": "img/brunopinasco.png",
+          "nombre": "brunopinasco",
+          "followers": 933000
+        },
+        {
+          "img": "img/floxie10.png",
+          "nombre": "floxie10",
+          "followers": 187000
+        },
+        {
+          "img": "img/buenviajeconmaud.png",
+          "nombre": "buenviaje.conmaud",
+          "followers": 145000
+        },
+        {
+          "img": "img/pangalandrade.png",
+          "nombre": "pangalandrade",
+          "followers": 1200000
+        }
+      ],
+      "Resultado": {
+        "Followers": "3300000 personas",
+        "Impresiones": "6800000",
+        "Contenidos": 127
+      }
+    },
+    {
+      "Titulo": "#Mesdelasaludbucal con Duh!",
+      "Texto": "Colgate eligió a Duh! Creators con el objetivo de generar reputación de marca a través de creadores de contenido que promovieron la importancia de la higiene bucal para sus hijos e hijas durante el #MesDeLaSaludBucal.",
+      "Video":"ColgateVideo.png",
+      "Influencers": [
+        {
+          "img": "img/marianom78.png",
+          "nombre": "marianom78",
+          "followers": 2200000
+        },
+        {
+          "img": "img/danilachepi.png",
+          "nombre": "danilachepi",
+          "followers": 4200000
+        },
+        {
+          "img": "img/juanarepettook.png",
+          "nombre": "juanarepettook",
+          "followers": 1600000
+        },
+        {
+          "img": "img/inutilisimas.png",
+          "nombre": "inutilisimas",
+          "followers": 1100000
+        },
+        {
+          "img": "img/flootero.png",
+          "nombre": "flootero",
+          "followers": 553000
+        }
+      ],
+      "Resultado": {
+        "Followers": "6100000 personas",
+        "Impresiones": "4000000",
+        "Contenidos": 21,
+        "Engagement": "+150000"
+      }
+    }
+  ]
+  

@@ -12,6 +12,8 @@
     -webkit-font-smoothing: antialiased; 
 }
 
+
+
 @font-face {
     font-family: 'Aglet-italic-bold';
     src: url('../fuentes/AgletSans-BoldItalic.woff2') format('woff2'),
@@ -19,10 +21,11 @@
         url('../fuentes/AgletSans-BoldItalic.ttf') format('truetype'),
         url('../fuentes/AgletSans-BoldItalic.svg') format('svg');
     font-weight: bold;
-    font-style: italic;
+    font-style: normal;
     -webkit-font-display: swap;
     font-display: swap;
     -webkit-font-smoothing: antialiased;
+    crossorigin: anonymous; /* Agrega esto */
 }
 
 @font-face {

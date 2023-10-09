@@ -1,40 +1,55 @@
+
 @font-face {
     font-family: 'Aglet-bold';
     src: url('../fuentes/AgletSans-Bold.woff2') format('woff2'),
-        url('../fuentes/AgletSans-Bold.woff') format('woff');
+        url('../fuentes/AgletSans-Bold.woff') format('woff'),
+        url('../fuentes/AgletSans-Bold.ttf') format('truetype'),
+        url('../fuentes/AgletSans-Bold.svg') format('svg');
     font-weight: bold;
     font-style: normal;
+    -webkit-font-display: swap; 
     font-display: swap;
+    -webkit-font-smoothing: antialiased; 
 }
 
 @font-face {
     font-family: 'Aglet-italic-bold';
     src: url('../fuentes/AgletSans-BoldItalic.woff2') format('woff2'),
-        url('../fuentes/AgletSans-BoldItalic.woff') format('woff');
+        url('../fuentes/AgletSans-BoldItalic.woff') format('woff'),
+        url('../fuentes/AgletSans-BoldItalic.ttf') format('truetype'),
+        url('../fuentes/AgletSans-BoldItalic.svg') format('svg');
     font-weight: bold;
     font-style: italic;
+    -webkit-font-display: swap;
     font-display: swap;
+    -webkit-font-smoothing: antialiased;
 }
-
 
 @font-face {
     font-family: 'Aglet Sans';
     src: url('../fuentes/AgletSans-Regular.woff2') format('woff2'),
-        url('../fuentes/AgletSans-Regular.woff') format('woff');
+        url('../fuentes/AgletSans-Regular.woff') format('woff'),
+        url('../fuentes/AgletSans-Regular.ttf') format('truetype'),
+        url('../fuentes/AgletSans-Regular.svg') format('svg');
     font-weight: normal;
     font-style: normal;
+    -webkit-font-display: swap;
     font-display: swap;
+    -webkit-font-smoothing: antialiased;
 }
 
 @font-face {
     font-family: 'Aglet-Extra';
     src: url('../fuentes/AgletSans-ExtraLight.woff2') format('woff2'),
-        url('../fuentes/AgletSans-ExtraLight.woff') format('woff');
+        url('../fuentes/AgletSans-ExtraLight.woff') format('woff'),
+        url('../fuentes/AgletSans-ExtraLight.ttf') format('truetype'),
+        url('../fuentes/AgletSans-ExtraLight.svg') format('svg');
     font-weight: 200;
     font-style: normal;
+    -webkit-font-display: swap;
     font-display: swap;
+    -webkit-font-smoothing: antialiased;
 }
-
 
 body {
     background-color: #965BDD;
@@ -59,7 +74,6 @@ body {
 .Aglet-italic-bold {
     font-family: 'Aglet-italic-bold';
 }
-
 
 @media (max-width: 1023px) {
     .gradient::after, .gradient::before {

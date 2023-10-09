@@ -62,17 +62,17 @@ export const Pensada = () => {
           <h2 className="text-white Aglet-bold uppercase text-3xl md:text-6xl">pensada para TÍ</h2>
           <p className="text-white Aglet-extra text-base font-light mt-6 max-w-[540px]">Métricas y <b className="Aglet-bold"> proyecciones de resultados</b> para que puedas tomar la mejor decisión para tu campaña</p>
 
-          <PensadaItem img="img/info.svg" description="Aquí podrás ver perfiles de content creators que hagan fit con la estrategia de tu marca. Por medio de data intelligence mostramos estadísticas del perfil y de su audiencia.">
+          <PensadaItem img="img/info2.png" description="Aquí podrás ver perfiles de content creators que hagan fit con la estrategia de tu marca. Por medio de data intelligence mostramos estadísticas del perfil y de su audiencia.">
             Información demográfica <br />
             y perfiles
           </PensadaItem>
 
-          <PensadaItem img="img/seleccion.svg" description="Mediante un Planner online podrás ver tu Creator List dónde se aprueban perfiles y presupuestos, también tendrás a disposición el proceso de revisión de contenido y fechas de publicación. ">
+          <PensadaItem img="img/seleccion2.png" description="Mediante un Planner online podrás ver tu Creator List dónde se aprueban perfiles y presupuestos, también tendrás a disposición el proceso de revisión de contenido y fechas de publicación. ">
             Posibilidad de <br />
             seleccionar perfiles
           </PensadaItem>
 
-          <PensadaItem img="img/reporte.svg" description="Podrás ver estadísticas de campaña, métricas por influencer y el éxito de cada publicación. Es fundamental contar con datos para poder entender el engagement y ROI de tus lanzamientos.">
+          <PensadaItem img="img/reporte2.png" description="Podrás ver estadísticas de campaña, métricas por influencer y el éxito de cada publicación. Es fundamental contar con datos para poder entender el engagement y ROI de tus lanzamientos.">
             Reportes con <br />
             métricas finales
           </PensadaItem>

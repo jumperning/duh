@@ -2,6 +2,8 @@ import { Fragment } from "react"
 import InstagramProfile from "./ig"
 
 export const ExperienciaItem = (props: any) => {
+    const rowCount = props.exp.Influencers.length;
+
     return (
         <div className="w-screen mx-auto">
             <div className={`duration-500 bg-[#F2F2F2] flex flex-col lg:flex-row p-4 gap-8 pb-6 lg:mt-20 lg:justify-center lg:items-center lg:w-[1100px] lg:mx-auto lg:max-w-screen-lg lg:rounded-[3rem]`}>
@@ -13,7 +15,7 @@ export const ExperienciaItem = (props: any) => {
                     <h3 className='text-[#6A11D6] text-2xl lg:text-3xl Aglet-bold'>{props.exp.Titulo}</h3>
                     <p className="lg:text-lg">{props.exp.Texto}</p>
                     <h4 className='text-[#6A11D6] text-xl Aglet-bold'>Influencers</h4>
-                    <div className='flex flex-col gap-8'>
+                    <div className={`grid ${rowCount < 3 ? 'grid-cols-1' : 'grid-cols-2'} grid-rows-${rowCount} gap-4`}>
                         {props.exp.Influencers.map((influencer: any, index: number) => {
                             return (
                                 <Fragment key={index}>

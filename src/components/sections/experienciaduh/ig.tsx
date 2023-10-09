@@ -28,7 +28,7 @@ export default function InstagramProfile(props: any) {
                     </a>
                 </div>
                 <div className='flex flex-col'>
-                    <a href={"https://instagram.com/" + props.influencer.nombre} target="_blank" className="text-lg text-black Aglet-bold font-bold text-left">{props.influencer.nombre}</a>
+                    <a href={"https://instagram.com/" + props.influencer.nombre} target="_blank" className="text-base text-black Aglet-bold font-bold text-left">{props.influencer.nombre}</a>
                     <span className='text-[#999999]'>{followerString} followers</span>
                     <a href={"https://instagram.com/" + props.influencer.nombre} target="_blank" className="text-sm text-black Aglet font-bold hidden lg:block">
                         <img src="img/instagram.svg" alt="" />

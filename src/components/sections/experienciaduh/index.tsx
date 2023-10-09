@@ -30,7 +30,7 @@ export const Experiencia = () => {
                                 <img className="h-16 w-16 max-w-none rounded-full object-cover" src="img/Supervielle.png" />
                             </button>
                         </div>
-                        <button onClick={() => { changeTo(0) }} className="text-sm text-[#edcc6b] Aglet font-bold">Supervielle</button>
+                        <button onClick={() => { changeTo(0) }} className="text-sm text-white Aglet font-bold">Supervielle</button>
                     </div>
 
                     <div className="flex flex-col items-center space-y-2">

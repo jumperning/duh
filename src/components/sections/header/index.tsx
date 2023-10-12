@@ -7,7 +7,8 @@ export default function Header() {
         { id: "", name: "Qué hacemos" },
         { id: "quienes", name: "Quiénes somos" },
         { id: "pensadaparati", name: "Nuestra tech" },
-        { id: "experiencia", name: "Experiencia Duh!" }
+        { id: "experiencia", name: "Experiencia Duh!" },
+       { id: "contacto", name: "Habla con nosotros" }
     ]
 
     const [showMenu, setShowMenu] = useState(false);
@@ -17,9 +18,9 @@ export default function Header() {
     }
 
     return (
-        <nav className="w-full flex justify-center items-center">
-            <div className="w-full p-6 flex flex-row justify-between items-start lg:items-center max-w-[1280px] ">
-                <img src="img/logo.svg" className="z-50"/>
+        <nav className="w-full flex justify-center items-center fixed bg-[#8357ba] z-[999]">
+            <div className="w-full p-5 flex flex-row justify-between items-start lg:items-center max-w-[1280px] ">
+                <img src="img/logo.svg" className="z-50 lg:w-28"/>
                 <div className="flex w-full justify-end">
                     <button className="lg:hidden" onClick={handleMenu}>
                         <img className="z-50" src="img/menu.svg" />

@@ -1,7 +1,7 @@
 
 export const Contactanos = () => {
     return (
-        <section className='text-center py-16 lg:flex lg:flex-row lg:justify-center lg:items-start lg:gap-20'>
+        <section className='text-center py-16 lg:flex lg:flex-row lg:justify-center lg:items-start lg:gap-20' id="contacto">
             <div className="block lg:hidden">
                 <h2 className='text-4xl Aglet-italic-bold text-[#F4CA58] pt-6 -skew-y-6'>¡CONTÁCTANOS!</h2>
                 <p className='text-white Aglet-bold font-bold py-6 text-xl'>¿Cómo podemos ayudarte?</p>

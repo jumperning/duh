@@ -97,7 +97,7 @@ function QuienesSomos() {
                     <SliderCard swipePos={swipePos[2]} bg={false} >
                         <div className="flex flex-col justify-center items-start">
                             <Title className="text-left">
-                                Quiénes<br />
+                                ¿Quiénes<br />
                                 somos?
                             </Title>
                             <p onClick={previousSwipe} className="-skew-y-3 text-lg Aglet-extra text-white mb-5 uppercase text-left leading-5">

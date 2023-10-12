@@ -7,7 +7,7 @@ const VideoModal: React.FC<{ isOpen: boolean; onClose: () => void; videoSrc: str
       <div className=" flex justify-center items-center  h-screen relative">
         <div className="w-full md:w-3/4 relative ">
         <span className="close text-red z-30  bg-red-500 text-white text-3xl  w-14 h-14 text-center justify-center items-center flex rounded-full absolute -top-12 -right-12 cursor-pointer" onClick={onClose}>x</span>
-        <video controls loop muted src={videoSrc} className="w-full relative md:rounded-3xl aspect-video"></video>
+        <video controls loop autoPlay muted src={videoSrc} className="w-full relative md:rounded-3xl aspect-video"></video>
         </div>
       </div>
     </div>

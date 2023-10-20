@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-scroll";
 
 export default function Header() {
@@ -8,19 +8,33 @@ export default function Header() {
         { id: "quienes", name: "Quiénes somos" },
         { id: "pensadaparati", name: "Nuestra tech" },
         { id: "experiencia", name: "Experiencia Duh!" },
-       { id: "contacto", name: "Habla con nosotros" }
+        { id: "contacto", name: "Habla con nosotros" }
     ]
 
     const [showMenu, setShowMenu] = useState(false);
+    const [scrollPosition, setScrollPosition] = useState(0);
+    
+    const handleScroll = () => {
+        const position = window.scrollY;
+        setScrollPosition(position);
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll, { passive: true });
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     function handleMenu() {
         setShowMenu(!showMenu)
     }
 
     return (
-        <nav className="w-full flex justify-center items-center fixed bg-[#8357ba] z-[999]">
+        <nav className={`w-full flex justify-center items-center fixed bg-[#8357ba] z-[999] duration-300 ${scrollPosition > 50 ? "shadow-lg" : ""}`}>
             <div className="w-full p-5 flex flex-row justify-between items-start lg:items-center max-w-[1280px] ">
-                <img src="img/logo.svg" className="z-50 lg:w-28"/>
+                <img src="img/logo.svg" className="z-50 lg:w-28" />
                 <div className="flex w-full justify-end">
                     <button className="lg:hidden" onClick={handleMenu}>
                         <img className="z-50" src="img/menu.svg" />
@@ -29,7 +43,7 @@ export default function Header() {
                         className={`${showMenu ? "opacity-100 bg-[#7c52ad] sm:bg-transparent" : "lg:opacity-100 opacity-0"} z-30 duration-300 absolute inset-x-0 lg:static flex flex-col lg:flex-row justify-end items-center gap-2 lg:gap-8 w-full lg:w-auto shadow-md lg:shadow-none pb-4 Aglet`}
                         style={{
                             top: showMenu ? '88px' : '-250px',
-                            
+
                         }}
                     >
                         {menuOptions.map((menu: { id: string, name: string }, index: number) => {

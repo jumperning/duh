@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 export default function Header() {
 
     const menuOptions = [
-        { id: "", name: "Qué hacemos" },
+        { id: "conocenos", name: "Qué hacemos" },
         { id: "quienes", name: "Quiénes somos" },
         { id: "pensadaparati", name: "Nuestra tech" },
         { id: "experiencia", name: "Experiencia Duh!" },

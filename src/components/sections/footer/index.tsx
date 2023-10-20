@@ -8,13 +8,18 @@ export const Footer = () => {
             <div>
                 <ul className='flex gap-8'>
                     <li>
-                        <a href="#">
+                        <a href="https://www.instagram.com/duhcreatorsok/">
                             <img src="img/ig.svg" alt="Instagram" />
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="https://www.linkedin.com/company/duhcreators/">
                             <img src="img/in.svg" alt="LinkedIn" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:info@duhcreators.com">
+                            <img src="img/mail.svg" alt="Mail" className="w-10 fill-white" />
                         </a>
                     </li>
                 </ul>

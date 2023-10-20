@@ -23,21 +23,21 @@ export default function InstagramProfile(props: any) {
         <div className="flex flex-row justify-between gap-3 items-center space-y-2">
             <div className='flex justify-center items-center gap-3'>
                 <div className="from-instagramYellow via-instagramOrange to-instagramPurple relative rounded-full bg-gradient-to-tr p-1">
-                    <a href={"https://instagram.com/" + props.influencer.nombre} target="_blank" className="block rounded-full bg-[#F2F2F2] p-1">
+                    <span className="block rounded-full bg-[#F2F2F2] p-1">
                         <img className="h-16 w-16 max-w-none rounded-full object-cover" src={props.influencer.img} />
-                    </a>
+                    </span>
                 </div>
                 <div className='flex flex-col'>
-                    <a href={"https://instagram.com/" + props.influencer.nombre} target="_blank" className="text-base text-black Aglet-bold font-bold text-left">{props.influencer.nombre}</a>
+                    <p className="text-base text-black Aglet-bold font-bold text-left">{props.influencer.nombre}</p>
                     <span className='text-[#999999]'>{followerString} followers</span>
-                    <a href={"https://instagram.com/" + props.influencer.nombre} target="_blank" className="text-sm text-black Aglet font-bold hidden lg:block">
+                    <p className="text-sm text-black Aglet font-bold hidden lg:block">
                         <img src="img/instagram.svg" alt="" />
-                    </a>
+                    </p>
                 </div>
             </div>
-            <a href={"https://instagram.com/" + props.influencer.nombre} target="_blank" className="text-sm text-black Aglet font-bold block lg:hidden">
+            <span className="text-sm text-black Aglet font-bold block lg:hidden">
                 <img src="img/instagram.svg" alt="" />
-            </a>
+            </span>
         </div>
     )
 }

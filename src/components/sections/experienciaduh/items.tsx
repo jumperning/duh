@@ -47,7 +47,7 @@ export const ExperienciaItem = (props: any) => {
                     </div>
                 </article>
                 <div className="w-1/2 hidden sm:block">
-                    <video src={props.exp.Video} controls />
+                    <video src={props.exp.Video}  autoPlay muted/>
                 </div>
             </div>
         </div>

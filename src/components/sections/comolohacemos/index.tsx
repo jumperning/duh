@@ -1,23 +1,22 @@
-import { useEffect, useState } from "react";
 import HowItem from "./items"
 
 export const Comolohacemos = () => {
 
-    const [actualScroll, setActualScroll] = useState(0);
-    const [top, setTop] = useState("80px");
-    const [transition, setTransition] = useState(".5s");
-    const [ease, setEase] = useState("ease-in");
+    //const [actualScroll, setActualScroll] = useState(0);
+    //const [top, setTop] = useState("80px");
+    //const [transition, setTransition] = useState(".5s");
+    //const [ease, setEase] = useState("ease-in");
 
-    useEffect(() => {
+    /*useEffect(() => {
         if (window.innerWidth > 1023) {
             setTimeout(() => {
                 setTop("80px");
                 setActualScroll(0);
             }, 2000)
         }
-    }, [])
+    }, [])*/
 
-    useEffect(() => {
+    /*useEffect(() => {
         if (window.innerWidth > 1023) {
             const time = 5000;
             setTransition('.5s');
@@ -44,7 +43,7 @@ export const Comolohacemos = () => {
 
             }, time + 500)
         }
-    }, [actualScroll])
+    }, [actualScroll])*/
 
     return (
         <section className="text-center gap-4 sm:gap-24 mt-28 flex flex-col lg:flex-row justify-center items-center sm:h-[40vh] ">
@@ -55,13 +54,8 @@ export const Comolohacemos = () => {
             </div>
             <div className="relative lg:w-[600px]">
                 <div className="gradient">
-                    <div className="lg:h-[400px] overflow-auto lg:snap-y relative w-full">
-                        <div className="w-full  lg:absolute"
-                            style={{
-                                top: top,
-                                transitionDuration: transition,
-                                transitionTimingFunction: ease
-                            }}>
+                    <div className="lg:h-[400px] overflow-auto lg:snap-y relative w-full scrollbar-thin scrollbar-rounded-lg scrollbar-thumb-white/25 scrollbar-thumb-rounded scrollbar-track-transparent">
+                        <div className="w-full lg:absolute">
                             <HowItem number="1" title="SELECCIÓN">
                                 Seleccionamos los perfiles <br /> adecuados según <b className="Aglet-bold"> la estrategia de marketing </b> de tu marca.
                             </HowItem>

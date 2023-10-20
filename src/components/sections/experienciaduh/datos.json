@@ -2,7 +2,7 @@
     {
       "Titulo": "Experiencia Duh! Supervielle",
       "Texto": "Banco Supervielle presentó su nueva Cuenta Hit y nos eligió para contarlo a través de influencers. Como parte de la estrategia acompañamos a los creadores de contenido Cristóbal Combes y Juli Castro al impresionante show de Fuerza Bruta, donde el Banco Supervielle instaló su activación para que mostraran en sus redes toda la experiencia.",
-      "Video":"supervilleVideo.png",
+      "Video":"video/Supervielle.mp4",
       "Influencers": [
         {
           "img": "img/cristobalcombes.png",
@@ -24,7 +24,7 @@
     {
       "Titulo": "Aumentando el tráfico en las concesionarias Renault",
       "Texto": "El objetivo de Renault fue aumentar el tráfico de gente que visitó los concesionarios oficiales durante Agosto. En conjunto con Duh! Creators planificaron y ejecutaron una gran campaña con celebrities.",
-      "Video":"RenaultVideo.png",
+      "Video":"video/Renault.mp4",
       "Influencers": [
         {
           "img": "img/gsoffritti.png",
@@ -61,7 +61,7 @@
     {
       "Titulo": "Amplificando el lanzamiento de cabinas renovadas con Duh!",
       "Texto": "LATAM buscó potenciar el alcance del lanzamiento de sus cabinas completamente renovadas en Lima, Perú. El objetivo fue comunicar los pilares de la marca LATAM: calidad, comodidad y puntualidad. Dejaron en manos de Duh! Creators la estrategia comunicacional del evento de lanzamiento por medio de creadores de contenido de Perú, Chile, Argentina y Ecuador.",
-      "Video":"LATAMVideo.png",
+      "Video":"video/LATAM.mp4",
       "Influencers": [
         {
           "img": "img/vale_caballero.png",
@@ -108,7 +108,7 @@
     {
       "Titulo": "#Mesdelasaludbucal con Duh!",
       "Texto": "Colgate eligió a Duh! Creators con el objetivo de generar reputación de marca a través de creadores de contenido que promovieron la importancia de la higiene bucal para sus hijos e hijas durante el #MesDeLaSaludBucal.",
-      "Video":"ColgateVideo.png",
+      "Video":"video/Colgate.mp4",
       "Influencers": [
         {
           "img": "img/marianom78.png",

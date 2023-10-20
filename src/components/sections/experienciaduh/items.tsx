@@ -47,7 +47,7 @@ export const ExperienciaItem = (props: any) => {
                     </div>
                 </article>
                 <div className="w-1/2 hidden sm:block">
-                    <img src={"img/" + props.exp.Video} alt="Superville Instagram" />
+                    <video src={props.exp.Video} controls />
                 </div>
             </div>
         </div>

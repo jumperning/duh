@@ -44,9 +44,9 @@ function SocialAnim(props: any) {
     function increaseLikes() {
         var auxNum:any;
         if (props.likes) {
-            auxNum = 200;
+            auxNum = 2000;
         } else {
-            auxNum = 100;
+            auxNum = 1000;
         }
         for (var i = 0; i < 100; i++) {
             setTimeout(() => {

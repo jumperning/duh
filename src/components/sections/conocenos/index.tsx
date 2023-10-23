@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 function Conocenos() {
 
     return (
-        <section id="conocenos" className="w-full flex flex-col md:flex-row-reverse justify-center  sm:items-start items-center gap-8 sm:gap-44 mt-44 sm:mt-52 overflow-x-clip lg:h-[50vh]">
+        <section id="conocenos" className="w-full flex flex-col md:flex-row-reverse justify-center  sm:items-start items-center gap-8 sm:gap-44 mt-20 md:mt-44 overflow-x-clip lg:h-[50vh]">
             <ConocenosAnim />
             <div className="flex flex-col justify-center items-center gap-4 sm:gap-8">
                 <MainTitle>

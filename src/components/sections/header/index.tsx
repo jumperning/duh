@@ -42,14 +42,14 @@ export default function Header() {
                     <div
                         className={`${showMenu ? "opacity-100 bg-[#7c52ad] sm:bg-transparent" : "lg:opacity-100 opacity-0"} z-30 duration-300 absolute inset-x-0 lg:static flex flex-col lg:flex-row justify-end items-center gap-2 lg:gap-8 w-full lg:w-auto shadow-md lg:shadow-none pb-4 Aglet`}
                         style={{
-                            top: showMenu ? '88px' : '-250px',
+                            top: showMenu ? '88px' : '-300px',
 
                         }}
                     >
                         {menuOptions.map((menu: { id: string, name: string }, index: number) => {
                             return (
                                 <Link key={index} to={menu.id} smooth={true} duration={500} offset={-30} className="h-12">
-                                    <button className="text-white w-full h-full">
+                                    <button className={`text-white w-full h-full ${menu.name == "Habla con nosotros" ? "md:font-bold md:rounded-3xl md:px-4 md:py-1 md:bg-[#F4CA58] md:text-[#965BDD]" : ""}`}>
                                         {menu.name}
                                     </button>
                                 </Link>

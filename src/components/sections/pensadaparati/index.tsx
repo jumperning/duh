@@ -91,16 +91,14 @@ export const Pensada = () => {
               <img src="img/reporte.png" width="50px" />
             </PensadaVideoNav>
           </div>
-          <div className="absolute z-20">
+          {!isVideoModalOpen && <div className="absolute z-20">
             <PensadaItemNoIMG opacity={videoDataOpacity} img={videoIcon} description={videoDescription}>
               {videoTitle}
             </PensadaItemNoIMG>
             <img src="img/mirarVideo.svg" alt="" className="z-20 mx-auto cursor-pointer" onClick={openVideoModal} />
-
-          </div>
-          <img src="img/video.png" alt="" className="w-full md:w-3/4 relative md:rounded-3xl aspect-video" />
-
-          <VideoModal isOpen={isVideoModalOpen} onClose={closeVideoModal} videoSrc="img/video.mp4" />
+          </div>}
+          {!isVideoModalOpen && <img src="img/video.png" alt="" className="w-full md:w-3/4 relative md:rounded-3xl aspect-video" />}
+          {isVideoModalOpen && <video src="img/video.mp4" autoPlay controls className="w-full md:w-3/4 relative md:rounded-3xl aspect-video" />}
 
         </div>
       </section>

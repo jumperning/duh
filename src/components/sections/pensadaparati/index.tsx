@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { PensadaItem, PensadaItemNoIMG, PensadaVideoNav } from "./item"
+//@ts-ignore
 const VideoModal: React.FC<{ isOpen: boolean; onClose: () => void; videoSrc: string }> = ({ isOpen, onClose, videoSrc }) => {
 
   return (
@@ -24,6 +25,7 @@ export const Pensada = () => {
   const [isVideoModalOpen, setVideoModalOpen] = useState(false);
 
   const openVideoModal = () => setVideoModalOpen(true);
+  //@ts-ignore
   const closeVideoModal = () => setVideoModalOpen(false);
   useEffect(() => {
     setVideoDataOpacity("opacity-0");

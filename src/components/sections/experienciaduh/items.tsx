@@ -33,7 +33,7 @@ export const ExperienciaItem = (props: any) => {
                         <h3 className='text-[#6A11D6] text-2xl lg:text-3xl Aglet-bold'>{props.exp.Titulo}</h3>
                         <p className="lg:text-lg">{props.exp.Texto}</p>
                         <h4 className='text-[#6A11D6] text-xl Aglet-bold'>Influencers</h4>
-                        <div className={`md:grid ${rowCount < 3 ? 'md:grid-cols-1' : 'lg:grid-cols-2'} md:grid-rows-${rowCount} gap-4 flex flex-no-wrap flex-col justify-start items-start overflow-y-auto h-96 scrollbar-thin scrollbar-rounded-lg scrollbar-thumb-black/25 scrollbar-thumb-rounded scrollbar-track-transparent`}>
+                        <div className={`gap-4 md:gap-4 flex flex-no-wrap flex-col justify-start items-start overflow-y-auto md:overflow-none h-96 scrollbar-thin scrollbar-rounded-lg scrollbar-thumb-black/25 scrollbar-thumb-rounded scrollbar-track-transparent`}>
                             {props.exp.Influencers.map((influencer: any, index: number) => {
                                 return (
                                     <Fragment key={index}>

@@ -23,7 +23,7 @@ export const Experiencia = () => {
             <h4 className='Aglet-italic-bold text-7xl text-[#edcc6b] -skew-y-6'>Duh!</h4>
             <p className='text-white Aglet mt-6'>Disfruta la experiencia Duh! como <br className="sm:hidden" /> nunca antes</p>
             <div className='mt-16 mb-6'>
-                <div className="flex justify-evenly items-center overflow-x-auto pb-6 scrollbar-thin scrollbar-rounded-lg scrollbar-thumb-black/25 scrollbar-thumb-rounded scrollbar-track-transparent">
+                <div className="flex justify-evenly md:justify-center items-center overflow-x-auto pb-6 scrollbar-thin scrollbar-rounded-lg scrollbar-thumb-black/25 scrollbar-thumb-rounded scrollbar-track-transparent md:gap-8">
                     <div className="flex flex-col lg:justify-center items-center space-y-2">
                         <div className="from-instagramYellow via-instagramOrange to-instagramPurple relative rounded-full bg-gradient-to-tr p-1">
                             <button onClick={() => { changeTo(0) }} className="block rounded-full bg-[#965BDD] p-1">

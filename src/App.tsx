@@ -13,13 +13,13 @@ function App() {
   return (
     <div className='overflow-x-hidden Aglet scrollbar-thin scrollbar-rounded-lg scrollbar-thumb-white/25 scrollbar-thumb-rounded scrollbar-track-transparent'>
       <Header />
-      <Conocenos/>
-      <QuienesSomos/>
+      <Conocenos />
+      <QuienesSomos />
       <Pensada />
       <Comolohacemos />
       <Experiencia />
-      <Contactanos/>
-      <Footer/>
+      <Contactanos />
+      <Footer />
     </div>
   )
 }

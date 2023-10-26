@@ -56,6 +56,12 @@ export const Pensada = () => {
 
   }, [selectedId])
 
+  useEffect(() => {
+    if (window.innerWidth < 768) {
+      openVideoModal();
+    }
+  }, [])
+
   return (
     <>
       <section className="flex flex-col justify-around items-center text-center mt-12" id="pensadaparati">
@@ -100,7 +106,7 @@ export const Pensada = () => {
             <img src="img/mirarVideo.svg" alt="" className="z-20 mx-auto cursor-pointer" onClick={openVideoModal} />
           </div>}
           {!isVideoModalOpen && <img src="img/video.png" alt="" className="w-full md:w-3/4 relative md:rounded-3xl aspect-video" />}
-          {isVideoModalOpen && <video src="img/video.mp4" autoPlay controls className="w-full md:w-3/4 relative md:rounded-3xl aspect-video" />}
+          {isVideoModalOpen && <video src="img/video.mp4" autoPlay controls loop muted className="w-full md:w-3/4 relative md:rounded-3xl aspect-video" />}
 
         </div>
       </section>

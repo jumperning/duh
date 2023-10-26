@@ -2,7 +2,6 @@ import { Fragment, useState } from "react"
 import InstagramProfile from "./ig"
 
 export const ExperienciaItem = (props: any) => {
-    const rowCount = props.exp.Influencers.length;
 
     const [showVideo, setShowVideo] = useState(false);
     const [opacity, setOpacity] = useState(1);

@@ -110,9 +110,6 @@ export const Pensada = () => {
 
         </div>
       </section>
-      <>
-
-      </>
     </>
   )
 }

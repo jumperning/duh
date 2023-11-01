@@ -7,7 +7,7 @@ export const Contactanos = () => {
     const [company, setCompany] = useState("");
     const [mail, setMail] = useState("");
     const [message, setMessage] = useState("");
-
+    const [enviado, setEnviado] = useState(false);
     function handleSubmit() {
         const url = "https://prod-56.westus.logic.azure.com/workflows/199ffde9d9e44711b250777e180a5cd1/triggers/manual/paths/invoke/Leads/D0DF81B225FF4FABBE5FD8AA6D691EAD?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=aixEk1VHU6cX-H6HYC1Cdz5ar2bBkbCGqEdrUXoxPPw";
         const data = {
@@ -17,10 +17,14 @@ export const Contactanos = () => {
             message: message
         };
 
+
+
+
+        
         axios.post(url, data)
             .then(response => {
                 if (response.status == 200) {
-                    alert("Se ha enviado correctamente su mensaje!");
+                    setEnviado(true);
                 }
             })
             .catch(error => {
@@ -71,7 +75,7 @@ export const Contactanos = () => {
                         <button onClick={handleSubmit} className='text-[#0075FF]'>Enviar</button>
                     </div>
                 </div>
-
+                {enviado && <p>Mensaje enviado con éxito</p>}
             </div>
         </section>
     )
